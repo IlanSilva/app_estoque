@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00002B;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-horizontal" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav-horizontal">
+        <ul class="navbar-nav">
+            <li class="bar-item">
+                <a class="navbar-link" href="/">
+                    HOME
+                </a>
+            </li>
+            <li class="bar-item">
+                <a href="/gestao/empresa">
+                    GESTÃO
+                </a>
+            </li>
+            {{#if user }}
+            <li class="bar-item-login">
+                <a href="/autenticacao/logout">
+                    LOGOUT
+                </a>
+            </li>
+            {{else}}
+            <li class="bar-item-login">
+                <a href="/autenticacao/login">
+                    LOGIN
+                </a>
+            </li>
+            {{/if}}
+        </ul>
+    </div>
+
+</nav>
