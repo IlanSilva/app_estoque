@@ -1,0 +1,20 @@
+<div class="container mt-4">
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th scope="col">CODIGO</th>
+                <th scope="col">NOME</th>
+                <th scope="col">CRIADO EM</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each empresas}}
+            <tr>
+                <th scope="row">{{this.codigo}}</th>
+                <td>{{this.nome}}</td>
+                <td>{{this.dt_registro}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
